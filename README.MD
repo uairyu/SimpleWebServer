@@ -45,7 +45,20 @@ Linux下的C++轻量级Web服务器
 2. `process_write函数`返回false时，会使`m_sockfd=-1`，但没有直接return，因而会执行下面的`modfd函数`
 
 ![](https://github.com/uairyu/SimpleWebServer/blob/master/image/bug_write_ret.png)
+- - -
+# 压力测试
 
+已经把测试所用网页放置`webbench-1.5`目录下，可自行测试。
+
+测试环境：并发连接总数10000，测试5秒，请求的网页大小为13018字节。
+
+测试机：Ubuntu18.04，CPU：I5-4210m 内存8G
+
+被测试机：VMware15下Ubuntu18.04，CPU：I5-4210m 内存1G，线程池数量：1
+
+QPS：3794，所有请求均成功
+
+![](https://github.com/uairyu/SimpleWebServer/blob/master/image/webbench_result.png)
 - - -
 # 致谢
 
