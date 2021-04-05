@@ -50,7 +50,7 @@ int main() {
     //预先为每个可能的客户连接分配一个http_conn对象
     http_conn *users = new http_conn[ MAX_FD ];
     if ( DEBUG ) {
-        printf( "正在生成http_conn2类, 占用 %ld KB\n",
+        printf( "正在生成http_conn类, 占用 %ld KB\n",
                 sizeof( http_conn ) * MAX_FD / 1024 );
     }
     assert( users );
