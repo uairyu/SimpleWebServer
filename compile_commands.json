@@ -1,0 +1,38 @@
+[
+    {
+        "arguments": [
+            "c++",
+            "-c",
+            "-Iheader",
+            "-o",
+            "main.o",
+            "main.cpp"
+        ],
+        "directory": "/home/af/code/web_linux",
+        "file": "main.cpp"
+    },
+    {
+        "arguments": [
+            "c++",
+            "-c",
+            "-Iheader",
+            "-o",
+            "http_conn.o",
+            "http_conn.cpp"
+        ],
+        "directory": "/home/af/code/web_linux",
+        "file": "http_conn.cpp"
+    },
+    {
+        "arguments": [
+            "c++",
+            "-c",
+            "-Iheader",
+            "-o",
+            "config.o",
+            "config.cpp"
+        ],
+        "directory": "/home/af/code/web_linux",
+        "file": "config.cpp"
+    }
+]
