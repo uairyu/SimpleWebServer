@@ -2,7 +2,7 @@
 - - -
 Linux下的C++轻量级Web服务器
 
-* 实现了 **线程池 + 非阻塞socket + epoll(ET) + 事件处理Readctor** 并发模型
+* 实现了 **线程池 + 非阻塞socket + epoll(ET) + 同步I/O模拟事件处理Proactor模式 + 半同步/半反应堆模式** 并发模型
 * 实现了**主从状态机**解析HTTP请求（可对URL编码进行解码），目前仅支持解析GET请求，
 - - -
 
